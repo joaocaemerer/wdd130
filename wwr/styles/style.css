@@ -127,6 +127,24 @@ Fonts are separated by a & */
     transform: scale(1.1);
 }
 
+.rivers-main{
+    margin: 10px 0;
+    padding: 25px;
+    color: var(--headline-color-on-color);
+    background-color: var(--paragraph-background-color);
+}
+
+.rivers-main h2{
+    margin-top: 50px;
+}
+
+.rivers-img{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    margin: auto;
+    text-align: center;    
+}
+
 .rivers-card{
     grid-column: 2/4;
     grid-row: 2/3;
