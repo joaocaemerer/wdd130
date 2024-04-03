@@ -27,12 +27,20 @@
             <div>
                 <h3>Welcome to our Technology Stack At KMR</h3>
                 <p>we pride ourselves on harnessing the power of cutting-edge technologies to deliver innovative data solutions. Our robust technology stack is carefully curated to ensure optimal performance, scalability, and flexibility.</p>
-                <ul>
-                    <li>SQL</li>
-                    <li>Python</li>
-                    <li>Databricks</li>
-                    <li>Azure Cloud Services</li>
-            </ul>
+                <button class="accordion">SQL</button>
+                <div class="panel">
+                <p>SQL remains a cornerstone of data management and analytics, and we're experts at harnessing its power. Whether it's querying databases, performing data transformations, or optimizing data pipelines, our SQL expertise ensures efficient and reliable data operations.</p>
+                </div>
+
+                <button class="accordion">Power BI</button>
+                <div class="panel">
+                <p>Power BI is our go-to tool for data visualization and business intelligence. With its intuitive interface and powerful analytics capabilities, we can create interactive dashboards and reports that provide valuable insights into your data, empowering informed decision-making across your organization.</p>
+                </div>
+
+                <button class="accordion">Azure Cloud Services</button>
+                <div class="panel">
+                <p>We leverage Microsoft Azure's comprehensive suite of cloud services to build scalable and resilient data solutions. From Azure Databricks for big data processing to Azure SQL Database for managed relational databases, we harness the full potential of Azure to drive your data initiatives forward.</p>
+                </div>
             </div>
             <img src="images/technologies_graph.jpg" alt="Dashboard">
         </div>
@@ -62,5 +70,21 @@
     </footer>
 
     </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
 </body>
 </html>
